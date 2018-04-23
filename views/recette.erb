@@ -1,0 +1,7 @@
+<% a = @idx.to_i %>
+<h1> <%= @idx %>) <%= @cookbook.all[a].name %> </h1>
+<h2> (<%= @cookbook.all[a].prep_time %>) <%= @cookbook.all[a].difficulty.upcase %> </h2>
+<p> <%= @cookbook.all[a].description %> </p>
+
+<a href="http://localhost:4567/list">Retour à la liste
+</a>

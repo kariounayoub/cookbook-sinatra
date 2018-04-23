@@ -1,0 +1,9 @@
+<h1>Welcome to the Cookbook!</h1>
+<h4>What do you want to do next?</h4>
+<ul>
+  <% @menu.each do |menu_item| %>
+    <li>
+      <a href="http://localhost:4567/<%= menu_item[1] %>"><%= menu_item[0] %></a>
+    </li>
+  <% end %>
+</ul>

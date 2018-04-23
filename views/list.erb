@@ -1,0 +1,12 @@
+<ol>
+  <% @cookbook.all.each_with_index do |recipe, idx| %>
+    <li>
+      <a href="http://localhost:4567/list/<%= idx %>"><%= "[#{recipe.done ? "X" : " "}] #{recipe.name} (#{recipe.prep_time}) #{recipe.difficulty.upcase}" %>
+      </a>
+    </li>
+  <% end %>
+    <li>
+      <a href="http://localhost:4567/">Retour au menu
+      </a>
+    </li>
+</ol>
